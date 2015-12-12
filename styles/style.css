@@ -81,7 +81,7 @@ Main Components
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #7b9d6f;
+  background-color: #064020;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -103,8 +103,7 @@ Main Components
   text-align: center;
   font-size: 1.3rem;
   padding-bottom: 15px;
-  color: #383838;
-  /* fix bug on Safari - text flickering while timeline translates */
+  color: #1AFF80;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -ms-transform: translateZ(0);
@@ -282,8 +281,6 @@ Main Components
 }
 .cd-horizontal-timeline .events-content h2 {
   font-weight: bold;
-  font-size: 2.6rem;
-  font-family: "Playfair Display", serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -302,17 +299,7 @@ Main Components
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
 }
-@media only screen and (min-width: 768px) {
-  .cd-horizontal-timeline .events-content h2 {
-    font-size: 7rem;
-  }
-  .cd-horizontal-timeline .events-content em {
-    font-size: 2rem;
-  }
-  .cd-horizontal-timeline .events-content p {
-    font-size: 1.8rem;
-  }
-}
+
 
 @-webkit-keyframes cd-enter-right {
   0% {

@@ -41,7 +41,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function() {
-	var map = L.map('map').setView([38.5, -98], 5);
+	var map = L.map('map').setView([38.5, -98], 4);
 
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -59,7 +59,7 @@ $(document).ready(function() {
 
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
-		eventsMinDistance = 60;
+		eventsMinDistance = 45;
 
 	(timelines.length > 0) && initTimeline(timelines);
 
