@@ -20,12 +20,10 @@ Main Components
   transition: opacity 0.2s;
 }
 .cd-horizontal-timeline::before {
-  /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
   display: none;
 }
 .cd-horizontal-timeline.loaded {
-  /* show the timeline after events position has been set (using JavaScript) */
   opacity: 1;
 }
 .cd-horizontal-timeline .timeline {
@@ -42,7 +40,6 @@ Main Components
   overflow: hidden;
 }
 .cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
-  /* these are used to create a shadow effect at the sides of the timeline */
   content: '';
   position: absolute;
   z-index: 2;
@@ -61,20 +58,17 @@ Main Components
   background-image: linear-gradient(to left, #f8f8f8, rgba(248, 248, 248, 0));
 }
 .cd-horizontal-timeline .events {
-  /* this is the grey line/timeline */
   position: absolute;
   z-index: 1;
   left: 0;
   top: 49px;
   height: 2px;
-  /* width will be set using JavaScript */
   background: #dfdfdf;
   -webkit-transition: -webkit-transform 0.4s;
   -moz-transition: -moz-transform 0.4s;
   transition: transform 0.4s;
 }
 .cd-horizontal-timeline .filling-line {
-  /* this is used to create the green line filling the timeline */
   position: absolute;
   z-index: 1;
   left: 0;
@@ -111,7 +105,6 @@ Main Components
   transform: translateZ(0);
 }
 .cd-horizontal-timeline .events a::after {
-  /* this is used to create the event spot */
   content: '';
   position: absolute;
   left: 50%;
@@ -150,13 +143,11 @@ Main Components
     margin: 6em auto;
   }
   .cd-horizontal-timeline::before {
-    /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
   }
 }
 
 .cd-timeline-navigation a {
-  /* these are the left/right arrows to navigate the timeline */
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -170,7 +161,6 @@ Main Components
   width: 34px;
   border-radius: 50%;
   border: 2px solid #dfdfdf;
-  /* replace text with an icon */
   overflow: hidden;
   color: transparent;
   text-indent: 100%;
@@ -180,7 +170,6 @@ Main Components
   transition: border-color 0.3s;
 }
 .cd-timeline-navigation a::after {
-  /* arrow icon */
   content: '';
   position: absolute;
   height: 16px;
@@ -250,7 +239,6 @@ Main Components
   animation-timing-function: ease-in-out;
 }
 .cd-horizontal-timeline .events-content li.selected {
-  /* visible event content */
   position: relative;
   z-index: 2;
   opacity: 1;
